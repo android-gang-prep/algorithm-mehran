@@ -28,11 +28,10 @@ public class FindMissingNumber extends AppCompatActivity {
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] - arr[i - 1] != 1) {
                 int finalI = i;
-                runOnUiThread(() -> binding.result.setText(Arrays.toString(arr)+": "+(arr[finalI - 1] + 1) + ""));
+                runOnUiThread(() -> binding.result.setText(Arrays.toString(arr) + ": " + (arr[finalI - 1] + 1) + ""));
                 return;
             }
         }
     }
-
-
 }
+
